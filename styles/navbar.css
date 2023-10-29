@@ -1,0 +1,15 @@
+html,
+body {
+  background-color: #f0ebd8; /* Set your desired background color */
+  height: 100%; /* Ensure the background color covers the entire viewport height */
+  margin: 0; /* Remove default margin to cover the entire window */
+  padding: 0; /* Remove default padding to cover the entire window */
+}
+
+.app-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaflet Map</title>
+  <!-- Include Leaflet CSS and JavaScript from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <!-- Create a div element to hold the map -->
+  <div id="map" style="height: 400px;"></div>
+
+  <!-- Include Leaflet JavaScript from CDN -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+    function createMapWithMarker(latitude, longitude) {
+      // Create a map centered around the specified latitude and longitude
+      var map = L.map('map').setView([latitude, longitude], 13);
+      
+      // Add a tile layer from OpenStreetMap
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+      }).addTo(map);
+      
+      // Add a marker to the map at the specified latitude and longitude
+      L.marker([latitude, longitude]).addTo(map)
+        .bindPopup('Hinton James Residence Hall')
+        .openPopup();
+    }
+
+    // Call the function with the specified latitude and longitude
+    createMapWithMarker(35.902405, -79.043275);
+  </script>
+</body>
+
+</html>
