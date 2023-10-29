@@ -6,11 +6,34 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/next-js": "^2.1.5",
+    "@chakra-ui/react": "^2.8.1",
+    "@clerk/nextjs": "^4.26.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@googlemaps/js-api-loader": "^1.16.2",
+    "@react-google-maps/api": "^2.19.2",
+    "@supabase/supabase-js": "^2.38.4",
+    "framer-motion": "^10.16.4",
+    "fs": "^0.0.1-security",
+    "google-map-react": "^2.2.1",
+    "google-maps-react": "^2.0.6",
+    "install": "^0.13.0",
+    "jsonfile": "^6.1.0",
     "next": "latest",
+    "npm": "^10.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-iframe": "^1.8.5",
+    "react-leaflet": "^4.2.1",
+    "sass": "^1.69.5"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.33",
+    "typescript": "5.2.2"
   }
 }
