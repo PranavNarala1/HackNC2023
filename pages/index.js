@@ -6,12 +6,14 @@ import Map from '../components/map.js';
 import { UserButton } from "@clerk/nextjs";
 
 
+import { useUser } from '@clerk/clerk-react';
 
 
 export default function Home() {
-  
   const position = [51.505, -0.09];
   const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+
   
   return (
     <div>
